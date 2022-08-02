@@ -2,6 +2,25 @@ body {
     font-family: roboto;
 }
 
+.flex-container {
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%
+}
+
+.flex-container div {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    text-align: center;
+}
+
+.flex-container img {
+    margin-top: 6px;
+    width: 60%;
+    height: 80%;
+}
+
 #botanfondo {
     width: 100%;
     height: 100%;
@@ -23,11 +42,6 @@ body {
     height: 5%;
     padding: 20px;
     justify-content: space-between;
-    align-items: center;
-}
-
-.container {
-    justify-content: center;
     align-items: center;
 }
 
@@ -58,7 +72,7 @@ a:active {
         justify-content: space-between;
     }
     .main {
-        margin-top: 50%;
+        margin-top: 20%;
         display: flex;
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
@@ -84,7 +98,7 @@ a:active {
         z-index: -1;
     }
     .main {
-        margin-top: 50%;
+        margin-top: 20%;
         display: flex;
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
@@ -93,6 +107,18 @@ a:active {
         height: 50%;
         margin-left: 5%;
         margin-right: 5%;
+    }
+}
+
+@media (max-width: 700px) {
+    .flex-container {
+        display: block;
+        margin-top: 5%;
+        margin-left: 10%;
+        width: 80%
+    }
+    .flex-container img {
+        width: 30%;
     }
 }
 
@@ -123,7 +149,7 @@ a:active {
         padding: 5%;
         width: 80%;
         height: 50%;
-        margin-top: 15%;
+        margin-top: 2%;
         margin-left: 5%;
         margin-right: 5%;
     }
